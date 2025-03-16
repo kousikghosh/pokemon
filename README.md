@@ -3,8 +3,10 @@
 # pokemon
 Pokémon application  
 
- ##showing the pokemon list  
- ##each card displaying image, name, height, weight, list of abilities  
+ #showing the pokemon list  
+ #each card displaying image, name, height, weight, list of abilities  
+ #details page added  
+ #back button added  
  ##used redux toolkit with axios and normal axios  
  ##used Vue3  
  #
