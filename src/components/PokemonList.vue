@@ -100,7 +100,7 @@ const handleClick = (params) => {
   //   path: "details",
   // });
   // eslint-disable-next-line no-debugger
-  debugger;
+  //debugger;
   // router.addRoute({
   //   path: "/details",
   //   component: PokemonDetails,
