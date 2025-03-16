@@ -1,12 +1,12 @@
 # pokemon
 
 # pokemon
-Pokémon application
+Pokémon application  
 
- #showing the pokemon list
- #each card displaying image, name, height, weight, list of abilities
- #used redux toolkit with axios and normal axios
- #used Vue3 
+ ##showing the pokemon list  
+ ##each card displaying image, name, height, weight, list of abilities  
+ ##used redux toolkit with axios and normal axios  
+ ##used Vue3  
  #
 
 ## Project setup
