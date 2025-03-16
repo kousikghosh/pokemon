@@ -39,12 +39,9 @@ let abilities = ref([] as any);
 let imageUrl = ref("");
 
 const pokemonInfo = useSelector((state) => state.pokemonInfo);
-//console.log("pokemonInfo: ", pokemonInfo);
 const dispatch = useDispatch();
 
 onMounted(() => {
-  //console.log("URL: ", props.url);
-  //dispatch(pokemonInfoFetch(props.url));
   sendRequest();
 });
 

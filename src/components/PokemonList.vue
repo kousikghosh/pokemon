@@ -52,7 +52,7 @@
       </DatasetSearchProvider>
     </Dataset> -->
     <div class="card" v-for="(item, index) in pokemonList" :key="index">
-      <PokemonInfo :url="item.url" @click="handleClick(index)" />
+      <PokemonInfo :url="item.url" @click="handleClick(item.url)" />
     </div>
   </div>
 </template>
@@ -80,9 +80,14 @@ import PokemonInfo from "./PokemonInfo.vue";
 import PokemonDetails from "./PokemonDetails.vue";
 
 import { useRouter, useRoute } from "vue-router";
+import { useLocalStorage, useSessionStorage } from "@vueuse/core";
 
 const router = useRouter();
 const route = useRoute();
+const pokemonUrl = useLocalStorage(
+  "pokemon-url",
+  "https://pokeapi.co/api/v2/pokemon/1/"
+);
 
 const paginationId = uniqueId("dataset-pagination");
 
@@ -95,6 +100,16 @@ onMounted(() => {
 
 const handleClick = (params) => {
   // eslint-disable-next-line no-debugger
+
+  // router.push({
+  //   name: "details",
+  //   query: {
+  //     ...route.query,
+  //     ...params,
+  //   },
+  // });
+
+  // eslint-disable-next-line no-debugger
   // router.push({
   //   name: "details",
   //   path: "details",
@@ -106,7 +121,8 @@ const handleClick = (params) => {
   //   component: PokemonDetails,
   // });
   //router.push("details");
-
+  pokemonUrl.value = params;
+  localStorage.setItem("pokemonUrl", params);
   router.push("details");
 };
 </script>

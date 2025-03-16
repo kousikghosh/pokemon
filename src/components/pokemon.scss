@@ -72,3 +72,24 @@
     padding-left: 10px;
 }
 
+.stats {
+  font-weight: 600;
+}
+
+.stats-list {
+  display: flex;
+  gap: 10px;
+}
+
+.stat-score-value {
+  font-weight: 700;
+}
+
+.stat-name {
+  font-weight: 700;
+}
+
+.back-button {
+  width: 100px !important;
+  margin: 5px;
+}

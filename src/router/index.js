@@ -8,6 +8,7 @@ const routes = [
     path: "/",
     name: "PokemonList",
     component: PokemonList,
+    props: (route) => ({ query: route.query.q }),
   },
   {
     path: "/details",
