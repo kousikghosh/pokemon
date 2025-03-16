@@ -1,0 +1,71 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import "tailwindcss";
+
+.main-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card-info-container {
+  font-weight: 400;
+  font-size: small;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.card-img {
+  height: 300px;
+  width: 300px;
+}
+
+.pokemon-name {
+  font-weight: 600;
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+.pokemon-height {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.pokemon-weight {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.abilities {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 10px;
+  li {
+    list-style: initial;
+  }
+}
+
+.pokemon-info-container {
+    padding-left: 10px;
+}
+
